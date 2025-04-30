@@ -1,0 +1,647 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+h1, h2, h3, p {
+    color: #fff;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #000000, #000000);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/DSC00356.png');  /* Ensure correct path */
+    background-size: cover;                         /* Ensures the image covers the entire section */
+    background-position: center;                    /* Centers the image */
+    padding: 60px 20px;
+    margin-top: 30px;
+    color: white;                                   /* Ensure text is readable on the image */
+}
+
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.cta-button {
+    background: #575757;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cta-button:hover {
+    background: #ffffff;
+}
+
+/* Work Section */
+.work-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.work-gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.work-gallery img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #aaa;
+}
+
+footer p {
+    margin-top: 20px;
+}
+/* Ensure the logo is consistent across all pages */
+.logo {
+    font-size: 2.5rem;  /* You can adjust this size as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; /* If you want the text color to stay white */
+    letter-spacing: 1px; /* Optional: adds spacing between letters */
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6; /* Increased line height for better readability */
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #1e1e1e, #1f1f1f);
+    padding: 40px 20px; /* Increased padding for more space around the header */
+    margin-bottom: 30px; /* Added margin below header */
+    text-align: center;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Sections */
+main {
+    padding: 20px; /* Add padding around main content */
+}
+
+/* Work Section */
+.work {
+    margin-bottom: 40px; /* Add margin below each work section */
+}
+
+.work-title {
+    margin-bottom: 20px; /* Add spacing between title and gallery */
+}
+
+.work-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px; /* Add space between work gallery and title */
+}
+
+.work-item {
+    max-width: 300px; /* Optional: Set a max-width for each work item */
+}
+
+.work-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px;
+    margin-top: 30px; /* Added margin top to footer */
+    font-size: 1rem;
+    color: #aaa;
+}
+
+/* Spacing for footer text */
+footer p {
+    margin-top: 20px;
+}
+/* Work Section Gallery */
+.work-gallery img {
+    width: 100%; /* Make the images fill the container */
+    height: 250px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image fills the space without distortion */
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+.work-gallery img:hover {
+    transform: scale(1.1); /* Make images grow slightly on hover */
+}
+/* Work Section Titles */
+.work h1, .work h2, .work h3 {
+    font-family: 'Playfair Display', serif;  /* Apply the elegant font */
+    font-size: 2rem;  /* Keep the size as you want */
+    font-weight: 700;  /* Set the weight to bold */
+    color: #fff;  /* Ensure the title is white or the color you prefer */
+    margin: 20px 0;  /* Add spacing around the titles */
+    font-style: italic;  /* Make the font italic */
+}
+
+/* Apply Flexbox to html and body */
+html, body {
+    height: 100%;  /* Ensure the full height is used */
+    display: flex;
+    flex-direction: column;  /* Stack the content vertically */
+    justify-content: space-between;  /* Push footer to the bottom if content is short */
+}
+
+footer {
+    margin-top: auto;  /* Push footer to the bottom of the page */
+}
+
+/* Gourmet Designs Section */
+.gourmet-designs {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gourmet-designs h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.gourmet-designs p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for the Designs */
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */
+    gap: 20px;  /* Space between grid items */
+    margin-top: 20px;
+}
+
+.design-item {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.design-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.design-item h3 {
+    font-size: 1.5rem;
+    color: #f8f8f8;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+/* Make the grid responsive for smaller screens */
+@media (max-width: 768px) {
+    .design-grid {
+        grid-template-columns: 1fr 1fr;  /* 2 columns for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .design-grid {
+        grid-template-columns: 1fr;  /* 1 column for mobile screens */
+    }
+}
+
+
+/* Work Section Titles */
+.work h1, .work h2, .work h3, .gourmet-title {
+    font-family: 'Playfair Display', serif;  /* Elegant, italic font */
+    font-size: 2rem;  /* Size of the title */
+    font-weight: 700;  /* Bold weight */
+    color: #fff;  /* White color */
+    margin: 20px 0;  /* Spacing around titles */
+    font-style: italic;  /* Italic style */
+}
+
+/* Work Section for Crossed Apparel */
+.crossed-apparel-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);  /* 5 equal columns */
+    gap: 20px;  /* Space between the items */
+    margin-top: 40px;  /* Space above the section */
+}
+
+.crossed-apparel-gallery .work-item {
+    text-align: center;
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.crossed-apparel-gallery .work-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Work Section for Crossed Apparel - 2 Column Layout */
+.crossed-apparel-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 equal columns for the first row */
+    gap: 40px;  /* Space between items */
+    margin-top: 40px;  /* Space above the section */
+}
+
+/* Adjust each image item */
+.crossed-apparel-gallery .work-item {
+    text-align: center;
+    background: #111;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.crossed-apparel-gallery .work-item img {
+    width: 100%;  /* Make the image fill the width of the container */
+    height: auto;  /* Automatically adjust the height to maintain the landscape aspect */
+    object-fit: cover;  /* Ensure the images maintain their aspect ratio */
+    border-radius: 8px;
+    max-width: 100%;  /* Ensure it doesn't stretch the images */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #111;
+    color: #fff;
+    padding: 40px;
+    margin-top: 60px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #222;
+    color: #fff;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #000000;  /* Green border on focus */
+}
+
+button.submit-btn {
+    background-color: #ffffff;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+    background-color: #ff00ff;  /* Pink hover effect */
+}
+/* Font for the "Crossed Studios" title */
+.crossed-title {
+    font-family: 'Poppins', sans-serif;  /* Replace with your desired font */
+    font-size: 2.5rem;  /* Adjust the size as needed */
+    font-weight: 700;   /* Optional: adjust the weight */
+}
+
+/* General styles for the header */
+.site-header {
+    text-align: center;
+    background: #000;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.about-hero {
+    padding: 60px 20px;
+    color: #fff;
+    background-color: #111;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-img img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+  }
+  
+  .about-text p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  /* About Section Styling */
+.about-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.about-section h3 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    color: #6e0101;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-top: 10px;
+}
+
+.about-section ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Optional: Divider style between sections */
+.about-section h3:not(:first-of-type) {
+    border-top: 1px solid #444;
+    padding-top: 30px;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+    filter: brightness(0) invert(1); /* makes icons white on dark background */
+  }
+  
+  .social-links a img:hover {
+    transform: scale(1.2);
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+}
+
+.hero {
+    position: relative;
+    height: 100vh; /* Makes the hero take up the full height of the screen */
+    overflow: hidden;
+  }
+  
+  .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+  }
+  
+  .social-icons a {
+    font-size: 2rem;  /* Icon size */
+    color: #ffffff;      /* Icon color */
+    margin: 0 15px;   /* Space between icons */
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #ff4f70;  /* Change color on hover (optional) */
+  }
+  
